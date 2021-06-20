@@ -1,0 +1,20 @@
+const express = require('express')
+const config = require('config')
+const mongoose = require('mongoose')
+
+const app = express()
+const PORT = config.get('port') || 5000
+
+const start = async () => {
+    try{
+        await mongoose.connect(congig.get('mongoUrl'),{useNewUrlParser: true, useUnifiedTopology:true,useCreateIndex:true})
+        app.listen(PORT,()=>console.log('server has been started on' + PORT))
+    }
+    catch(err){
+        console.log(err.message)
+        process.exit(1)
+    }
+}
+
+start()
+
