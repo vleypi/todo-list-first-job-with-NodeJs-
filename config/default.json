@@ -1,0 +1,5 @@
+{
+    "port":5000,
+    "secretKey":"secret key for token",
+    "mongoUrl":"mongodb+srv://vleypi:QmqJ6f7CYyPC@cluster0.yrmgl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+}
