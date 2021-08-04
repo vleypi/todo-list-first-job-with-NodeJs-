@@ -10,6 +10,10 @@ const schema = new Schema({
         type:String, 
         required:true
     },
+    list:{
+        type: Types.ObjectId,
+        ref: 'List'
+    }
 })
 
 module.exports = model('User',schema)
